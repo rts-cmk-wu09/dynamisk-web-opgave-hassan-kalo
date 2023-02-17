@@ -15,7 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelector(className).append(img, intorArticle);
     } else {
       let arr;
-      document.querySelector(className).append(h2, p, a);
+      div = document.createElement('div')
+      div.append(h2, p, a);
+      document.querySelector(className).append(div);
       if (obj == services) {
         arr = obj;
       } else if (obj == facilities) {
@@ -44,11 +46,13 @@ document.addEventListener("DOMContentLoaded", function () {
           element.forEach((footerArrsItem) => {
             const a = document.createElement("a");
             a.innerText = footerArrsItem;
+            a.href = '#'
             article.append(a);
           });
         } else if (obj == footerUnder) {
           const a = document.createElement("a");
           a.innerText = element;
+          a.href = '#'
           article.append(a);
         } else {
           a.innerText = element.linktext || "";

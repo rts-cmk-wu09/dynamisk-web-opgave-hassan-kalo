@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-rows: 2fr 2fr 1fr;
+}
+.hero img{
+    max-width: 100%;
+    height: 400px;
+    grid-column: 1/-1;
+    grid-row: 1/3;
+    margin: auto;
+}
+.hero article{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 15px;
+    grid-row: 2/4;
+    grid-column-start: 2;
+
+    font-size: 1.3em;
+}
+.hero article a{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    background-color: rgb(247, 128, 101);
+    color: white;
+}
+
+.services, .sites{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    margin-top: 90px;
+
+}
+.services article{
+  padding: 20px;
+}
+
+.facilities{
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px;
+}
+.advantages{
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.facilities div, .advantages div{
+    grid-column: 1/-1;
+}
+.advantages article{
+    padding: 30px;
+}
+.sites{
+    display: flex;
+    gap: 3%;
+    margin-top: 90px;
+}
+.sites div{
+    max-width: 20%;
+    font-size: 1.4em;
+}
+.sites div a{
+    text-decoration: none ;
+    background-color: rgb(247, 128, 101);
+    color: white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.sites article img{
+    height: 300px;
+}
+
+.footer--main{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    padding: 2rem;
+    
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+}
+.footer--main article a{
+    display: block;
+}
+.footer--main div{
+    max-width: 10%;
+    padding-left: 3rem;
+}
+.footer--main div p{
+    font-size: 2em;
+
+}
+
+.footer--small{
+    background-color: rgb(247, 247, 247);
+    
+    width: 100%;
+    border-top: 1px solid rgba(156, 156, 156, 0.439);
+   display: flex;
+   gap: 20px;
+   padding-top:20px;
+   border-left: 2rem solid rgb(247, 247, 247);
+   border-right: 2rem solid rgb(247, 247, 247) ;
+}
+
+.footer--small :nth-child(2){
+    width: 60%;
+}
+.footer--small a, .footer--main a{
+    text-decoration: none;
+    color: gray;
+}
+.footer--main article a:first-child{
+    text-decoration: none;
+    color: black;
+}

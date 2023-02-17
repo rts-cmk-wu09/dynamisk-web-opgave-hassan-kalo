@@ -110,21 +110,23 @@ let footerUpper = {
     text: "When Passion Meets Comfort",
     footerArrs:[
         [
-            'a',
+            'Discover the Network',
+            'b',
+            'c',
+            'd',
+            'd',
+        ],
+        [
+            'Become a Manger',
             'b',
             'c',
             'd',
         ],
         [
-            'a',
+            'Assistance',
             'b',
             'c',
             'd',
-        ],
-        [
-            'a',
-            'b',
-            'c',
             'd',
         ],
     ],
